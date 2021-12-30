@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    background-color: black;
+}
+/*Audio Container styling*/
+.audio-player{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,0);
+    border: 5px solid #95a5a6;
+    width: 50%;
+    border-radius: 35px;
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/212354104360973.5f6142cd8538c.png");
+ 
+}
+
+/*Audio Player styling*/
+.audio-player .audio{
+    width: 96%;
+    filter: invert();
+    margin: 2% 2%;
+    border: 2px solid black;
+    border-radius: 35px;
+}
+
+/*container for Audio Player Buttons*/
+.audio-player .audio-buttons{
+    text-align: center;
+}
+
+/*Audio Player Buttons styling*/
+.audio-player .audio-buttons button{
+    padding: 2% 3%; 
+    margin: 0.5% 2%;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background-color: black;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.audio-player .audio-buttons button:hover{
+    background-color: #3d3f3f;
+}
+
+/*Add button container*/
+.audio-player .add-div{
+    position: relative;
+    height: 5vh;
+    margin-top: 3%;
+}
+
+/*Input Button styling*/
+.audio-player .add-div .custom-file-input {
+    color: transparent;
+    position: absolute;
+    left: 8%;
+
+}
+
+.audio-player .add-div .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.audio-player .add-div .custom-file-input::before {
+    content: 'Add Song';
+    color: #ffffff;
+    display: inline-block;
+    background-color: #000000 ;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    padding: 5% 5%;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.audio-player .add-div .custom-file-input:hover::before {
+    background-color: #3d3f3f;
+}
+
+.audio-player .add-div .custom-file-input:active {
+    outline: 0;
+}
+
+.audio-player .add-div .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+
+
+/*Songs List container styling*/
+.audio-player #audio-list{
+    list-style: none;
+    height: fit-content;
+    margin: 3% 0;
+}
+
+/*Songs List styling*/
+.audio-player #audio-list li{
+    position: relative;
+    height: 5vh;
+}
+
+.audio-player #audio-list li a{
+    text-decoration: none;
+    position: absolute;
+    left: 2%;
+    color: #ffffff;
+    font-size: 1.5vw;
+}
+.audio-player #audio-list li a:hover{
+    filter: invert();
+}
+
+.audio-player #audio-list li button{
+    background-color: black;
+    position: absolute;
+    right: 4%;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.audio-player #audio-list li button:hover{
+    background-color: #3d3f3f;
+}

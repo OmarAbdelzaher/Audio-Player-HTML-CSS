@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta Links-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <!--StyleSheet Link-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="#"/>
+</head>
+<body>
+    <!--Audio Player Container Start-->
+    <div class="audio-player">
+        <!--Audio PLayer Tag-->
+        <audio class="audio" id="myAudio" controls src="" type='audio/mpeg' da></audio><br>
+        
+        <!--Audio Player Controls Container-->
+        <div class="audio-buttons">
+            <button onclick="shuffleAudio()" type="button">Shuffle</button>
+            <button onclick="seqAudio()" type="button">Sequentially</button>
+            <button onclick="playAudio()" type="button">Play</button>
+            <button onclick="pauseAudio()" type="button">Pause</button>
+        </div>
+
+        <!--Input Button-->
+        <div class="add-div">
+            <input type="file" class="custom-file-input">
+        </div>
+
+        <!--Songs List-->
+        <div >
+            <ul id="audio-list"></ul>
+        </div>
+    </div> 
+    <!--Audio Player Container Start-->
+
+    <!--Script File-->
+    <script src="js/main.js"></script>
+</body>
+</html>
